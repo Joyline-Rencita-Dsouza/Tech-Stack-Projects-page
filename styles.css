@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #ebf4f5;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +79,8 @@ h1 {
     max-width: calc(33.333% - 20px); /* Ensures 3 cards per row */
     border-color: rgb(81, 79, 79);
     background: rgb(255, 255, 255);
+    opacity: 0; /* Initial state for animation */
+    animation: slideDown 1s ease forwards; /* Apply slide-down animation */
 }
 
 .project-card:hover {
@@ -181,4 +183,49 @@ h1 {
         flex: 1 1 100%; /* 1 card per row */
         max-width: 100%;
     }
+}
+/* Animations  */
+
+/* Slide-down Animation */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Sequential Animation Delay for Each Card */
+.project-card:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(6) {
+    animation-delay: 0.8s;
+}
+
+/* Adjust as needed for more cards */
+
+/* Hover Animation */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
