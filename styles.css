@@ -92,7 +92,6 @@ h1 {
     /* padding: 5px; */
     height: auto;
     position: relative; /* Important for overlay positioning */
-    
 }
 
 .project-image img {
@@ -173,7 +172,7 @@ h1 {
     }
     .filter-bar {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+        grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     }
 }
 
@@ -185,7 +184,7 @@ h1 {
     }
     .filter-bar {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+        grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     }
 }
 
@@ -214,34 +213,34 @@ h1 {
     }
 }
 /* Sequential Animation Delay for Each Card */
-.project-card:nth-child(1) {
-    animation-delay: 0.8s;
+/* .project-card:nth-child(1) {
+    animation-delay: 0.9s;
 }
 
 .project-card:nth-child(2) {
-    animation-delay: 0.8s;
+    animation-delay: 0.95s;
 }
 
 .project-card:nth-child(3) {
-    animation-delay: 0.8s;
+    animation-delay: 0.96s;
 }
 
 .project-card:nth-child(4) {
-    animation-delay: 0.8s;
+    animation-delay: 0.97s;
 }
 
 .project-card:nth-child(5) {
-    animation-delay: 0.8s;
+    animation-delay: 0.98s;
 }
 
 .project-card:nth-child(6) {
-    animation-delay: 0.8s;
-}
+    animation-delay: 0.99s;
+} */
 
 /* Adjust as needed for more cards */
 
 /* Hover Animation */
-.project-card:hover {
+/* .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
